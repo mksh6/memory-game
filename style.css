@@ -15,7 +15,8 @@ body {
     display: flex;
 }
 
-.points {
+.controls {
+    text-align: center;
     padding: 5px;
     font-size: 4vw;
     align-self: center;

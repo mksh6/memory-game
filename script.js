@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll('.memory-card');
 const scoreSpan = document.querySelector('.score');
+const resetBtn = document.querySelector('.reset-button');
 
 let hasFlippedCard = false;
 let lockedBoard = false;
@@ -63,4 +64,9 @@ function resetBoard() {
     });
 })();
 
+function restart() {
+    location.reload();
+}
+
 cards.forEach(card => card.addEventListener('click', flipCard));
+resetBtn.addEventListener('click', restart)
